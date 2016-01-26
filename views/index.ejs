@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pikachu Battle Chat</title>
+  <link rel="stylesheet" href="/stylesheets/app.css">
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="/javascripts/chat.js"></script>	
+</head>
+<body>
+	<h1>Pikachu Battle Chat</h1>
+	<section class="pokemon">
+		<div class="player">
+			<img src="http://pokeapi.co/media/img/25.png">
+			<h3>Pikachu</h3>
+			<p>HP: <span class="current">100</span>/100</p>
+		</div>
+		<div class="opponents">
+			<ul>
+			</ul>
+		</div>
+	</section>
+	<section class="chat">
+  <ul id="messages"></ul>
+  <form action="">
+    <input id="m" autocomplete="off" /><button>Send</button>
+  </form>
+	</section>
+</body>
+</html>
